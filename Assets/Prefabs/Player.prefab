@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1041312628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3679226961256004638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f1b2ec1b72d2848a9b2099cdeef1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 8928558980431712882}
+  range: 100
+  damage: 10
 --- !u!1 &8363841911287691639
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df65e9c1b5983bb4f9780fb24451c376, type: 3}
+--- !u!1 &3679226961256004638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3566371730677276310, guid: df65e9c1b5983bb4f9780fb24451c376, type: 3}
+  m_PrefabInstance: {fileID: 176046500826555016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7765776114697305261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7616965101811752485, guid: df65e9c1b5983bb4f9780fb24451c376, type: 3}
