@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        BroadcastMessage("OnDamageTaken");
         hitPoints -= damage;
         Debug.Log(gameObject.name + ": I've been hit, my health is now " + hitPoints);
 
