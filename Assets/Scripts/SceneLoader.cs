@@ -21,6 +21,7 @@ public class SceneLoader : MonoBehaviour
     public void ReloadLevel()
     {
         SceneManager.LoadScene(currentScene.buildIndex);
+        Time.timeScale = 1;
     }
 
     public void QuitGame()

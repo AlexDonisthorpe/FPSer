@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
         playerHealth -= damage;
         if(playerHealth <= 0)
         {
-            Debug.Log("You dead, glip glop");
+            FindObjectOfType<DeathHandler>().HandleDeath();
         }
     }
 }

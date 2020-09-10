@@ -3398,6 +3398,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6966221052929530550, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 230445547}
     - target: {fileID: 1041312628, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
       propertyPath: muzzleFlash
       value: 
