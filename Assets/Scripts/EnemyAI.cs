@@ -11,12 +11,14 @@ public class EnemyAI : MonoBehaviour
 
     bool isProvoked = false;
     NavMeshAgent navMeshAgent;
+    Animator animator;
     float distanceToTarget = Mathf.Infinity;
 
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -48,12 +50,18 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseTarget()
     {
+        animator.SetBool("Attack", false);
+        animator.SetTrigger("Move");
         navMeshAgent.SetDestination(target.position);
     }
 
-    private static void Attack()
+    private void Attack()
     {
-        print("gotcha!");
+        animator.SetBool("Attack", true);
+        if(target==null || distanceToTarget >= navMeshAgent.stoppingDistance)
+        {
+            animator.SetBool("Attack", false);
+        }
     }
 
     private void OnDrawGizmosSelected()
