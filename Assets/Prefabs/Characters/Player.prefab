@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 8928558980431712882}
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 0}
+  hitEffectDestroyTimer: 0.3
   range: 100
   damage: 10
 --- !u!1 &8363841911287691639
@@ -58,6 +61,7 @@ GameObject:
   - component: {fileID: 8928558980428297010}
   - component: {fileID: 8928558980420113394}
   - component: {fileID: 8928558980426556854}
+  - component: {fileID: 2164361103186582360}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -179,6 +183,19 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &2164361103186582360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928558980433612884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e584514153aba4f827a5b045ea37f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 100
 --- !u!1 &8928558980433612886
 GameObject:
   m_ObjectHideFlags: 0
