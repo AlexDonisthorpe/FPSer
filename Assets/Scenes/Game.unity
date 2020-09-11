@@ -2475,10 +2475,10 @@ Transform:
   - {fileID: 760617137}
   - {fileID: 1468074765}
   - {fileID: 1789634232}
-  - {fileID: 2145772648}
   - {fileID: 1384492380}
   - {fileID: 647683438}
   - {fileID: 613192105}
+  - {fileID: 2145772648}
   - {fileID: 486457678}
   - {fileID: 1571374313}
   - {fileID: 705813329}
@@ -6345,6 +6345,14 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 230445547}
+    - target: {fileID: -3493289701617594792, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
+      propertyPath: zoomedInSensitivity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3493289701617594792, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
+      propertyPath: zoomedOutSensitivity
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1041312628, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
       propertyPath: muzzleFlash
       value: 
@@ -6356,6 +6364,10 @@ PrefabInstance:
     - target: {fileID: 1041312628, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
       propertyPath: hitEffectDestroyTimer
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928558980426556854, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
+      propertyPath: advancedSettings.slowDownRate
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8928558980428297010, guid: 61952abcd514b4a4fb5763f34a19c628, type: 3}
       propertyPath: m_AngularDrag
