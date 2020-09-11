@@ -221,7 +221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4694878a82535524cbb6346d125c68e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 15
+  - ammoType: 1
+    ammoAmount: 8
+  - ammoType: 2
+    ammoAmount: 4
 --- !u!1 &8928558980433612886
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +505,10 @@ PrefabInstance:
       propertyPath: damage
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: -6088056186943212755, guid: 05437ab387fd3fd4bb00271045df678c, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3653915689775899794, guid: 05437ab387fd3fd4bb00271045df678c, type: 3}
       propertyPath: m_Name
       value: Shotgun
@@ -604,6 +614,10 @@ PrefabInstance:
     - target: {fileID: 2281407470063861820, guid: 6a80d6211b4ba9146815188077981290, type: 3}
       propertyPath: damage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2281407470063861820, guid: 6a80d6211b4ba9146815188077981290, type: 3}
+      propertyPath: ammoType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4183616364824118403, guid: 6a80d6211b4ba9146815188077981290, type: 3}
       propertyPath: m_Name

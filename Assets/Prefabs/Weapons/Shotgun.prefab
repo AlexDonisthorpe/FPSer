@@ -106,6 +106,8 @@ MonoBehaviour:
   hitEffect: {fileID: 5685474108553310406, guid: fdc115f355b1aca4ebadb5d1ec918ac6, type: 3}
   hitEffectDestroyTimer: 0.1
   ammoSlot: {fileID: 0}
+  ammoType: 1
+  shootDelay: 1
   range: 100
   damage: 10
 --- !u!1 &6019912390736415181
