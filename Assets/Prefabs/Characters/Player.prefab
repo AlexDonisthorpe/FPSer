@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 8928558980426556854}
   - component: {fileID: 2164361103186582360}
   - component: {fileID: -6966221052929530550}
-  - component: {fileID: -3493289701617594792}
   - component: {fileID: -9162528575016872443}
   m_Layer: 0
   m_Name: Player
@@ -196,22 +195,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &-3493289701617594792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8928558980433612884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d91f5b28d388046a61df3b5f17683c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomedOutSensitivity: 1.5
-  zoomedInSensitivity: 0.5
 --- !u!114 &-9162528575016872443
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class WeaponZoom : MonoBehaviour
     void Start()
     {
         playerCamera = FindObjectOfType<Camera>();
-        playerController = GetComponent<RigidbodyFirstPersonController>();
+        playerController = GetComponentInParent<RigidbodyFirstPersonController>();
     }
 
     // Update is called once per frame

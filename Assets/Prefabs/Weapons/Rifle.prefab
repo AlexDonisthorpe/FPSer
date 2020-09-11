@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4183616364824352931}
   - component: {fileID: 4183616364814743369}
   - component: {fileID: 2281407470063861820}
+  - component: {fileID: 7976248095702563850}
   m_Layer: 0
   m_Name: Rifle
   m_TagString: Untagged
@@ -157,6 +158,22 @@ MonoBehaviour:
   ammoSlot: {fileID: 0}
   range: 100
   damage: 10
+--- !u!114 &7976248095702563850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4183616364824118403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d91f5b28d388046a61df3b5f17683c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomedOutFOV: 60
+  zoomedInFOV: 20
+  zoomedOutSensitivity: 1.5
+  zoomedInSensitivity: 0.5
 --- !u!1 &4183616364824118405
 GameObject:
   m_ObjectHideFlags: 0
