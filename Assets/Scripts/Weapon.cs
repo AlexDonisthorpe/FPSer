@@ -10,10 +10,12 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] float hitEffectDestroyTimer = 0.1f;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] float shootDelay = 3f;
 
     [SerializeField] float range = 100f;
     [SerializeField] int damage = 10;
 
+    bool canShoot = true; 
 
     // Start is called before the first frame update
     void Start()
@@ -24,21 +26,23 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) 
+        if (Input.GetButtonDown("Fire1") && canShoot) 
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }   
     }
 
-    private void Shoot()
+    IEnumerator Shoot()
     {
+        canShoot = false;
         if (ammoSlot.GetCurrentAmmo() > 0)
         {
             ammoSlot.ReduceCurrentAmmo();
             PlayMuzzleFlash();
             ProcessRaycast();
         }
-        
+        yield return new WaitForSeconds(shootDelay);
+        canShoot = true;
     }
 
     private void PlayMuzzleFlash()

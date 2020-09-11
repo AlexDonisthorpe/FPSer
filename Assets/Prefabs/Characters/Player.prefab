@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 8928558980431712882}
+    - target: {fileID: 2238724694453398364, guid: 783634150e76581409df5993567dc644, type: 3}
+      propertyPath: shootDelay
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3179173353343630390, guid: 783634150e76581409df5993567dc644, type: 3}
       propertyPath: m_Name
       value: M4
@@ -465,6 +469,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: -9162528575016872443}
+    - target: {fileID: -6088056186943212755, guid: 05437ab387fd3fd4bb00271045df678c, type: 3}
+      propertyPath: shootDelay
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3653915689775899794, guid: 05437ab387fd3fd4bb00271045df678c, type: 3}
       propertyPath: m_Name
       value: Shotgun
@@ -563,6 +571,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: -9162528575016872443}
+    - target: {fileID: 2281407470063861820, guid: 6a80d6211b4ba9146815188077981290, type: 3}
+      propertyPath: shootDelay
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4183616364824118403, guid: 6a80d6211b4ba9146815188077981290, type: 3}
       propertyPath: m_Name
       value: Rifle
