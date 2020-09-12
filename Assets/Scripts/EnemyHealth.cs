@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
+    bool isDead = false;
 
     // create a public method which reduces hitpoints by the amount of damage
 
@@ -12,11 +13,17 @@ public class EnemyHealth : MonoBehaviour
     {
         BroadcastMessage("OnDamageTaken");
         hitPoints -= damage;
-        Debug.Log(gameObject.name + ": I've been hit, my health is now " + hitPoints);
 
         if(hitPoints <= 0)
         {
-            Destroy(gameObject);
+            if (isDead) return;
+            isDead = true;
+            GetComponent<EnemyAI>().HandleDeath();
         }
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
     }
 }

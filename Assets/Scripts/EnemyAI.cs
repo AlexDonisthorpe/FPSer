@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
 
+    bool isAlive = true;
     bool isProvoked = false;
     NavMeshAgent navMeshAgent;
     Animator animator;
@@ -23,14 +24,15 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
-
-        if (isProvoked)
-        {
-            EngageTarget();
-        } else if (distanceToTarget < chaseRange)
-        {
-            isProvoked = true;
-        }
+      
+            if (isProvoked)
+            {
+                EngageTarget();
+            }
+            else if (distanceToTarget < chaseRange)
+            {
+                isProvoked = true;
+            }
     }
 
     private void EngageTarget()
@@ -45,6 +47,15 @@ public class EnemyAI : MonoBehaviour
             Attack();
         }
 
+    }
+
+    public void HandleDeath()
+    {
+        isProvoked = false;
+        animator.SetTrigger("Dead");
+        navMeshAgent.isStopped = true;
+        isAlive = false;
+        enabled = false;
     }
 
     public void OnDamageTaken()
