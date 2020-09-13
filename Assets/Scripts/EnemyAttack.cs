@@ -16,13 +16,6 @@ public class EnemyAttack : MonoBehaviour
     public void AttackHitEvent()
     {
         if (target == null) return;
-        try
-        {
-            target.dealDamage(damage);
-        }
-        catch (Exception e)
-        {
-            print(e.Message);
-        }
+        target.dealDamage(damage);
     }
 }

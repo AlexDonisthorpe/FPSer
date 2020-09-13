@@ -5,21 +5,17 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] float playerHealth= 100;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    DisplayDamage damageUI;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        damageUI = FindObjectOfType<DisplayDamage>();
     }
 
     public void dealDamage(float damage)
     {
         playerHealth -= damage;
+        damageUI.HandleHitFX();
         if(playerHealth <= 0)
         {
             FindObjectOfType<DeathHandler>().HandleDeath();
