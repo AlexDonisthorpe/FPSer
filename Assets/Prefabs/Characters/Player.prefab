@@ -223,11 +223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoSlots:
   - ammoType: 0
-    ammoAmount: 15
+    ammoAmount: 30
   - ammoType: 1
-    ammoAmount: 8
+    ammoAmount: 12
   - ammoType: 2
-    ammoAmount: 4
+    ammoAmount: 6
 --- !u!1 &8928558980433612886
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +411,14 @@ PrefabInstance:
     - target: {fileID: 1229323060125364079, guid: 0307f0a1097d2ac49b53c1835556fc8a, type: 3}
       propertyPath: m_InnerSpotAngle
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229323060125364079, guid: 0307f0a1097d2ac49b53c1835556fc8a, type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229323060125364079, guid: 0307f0a1097d2ac49b53c1835556fc8a, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4891223642365616259, guid: 0307f0a1097d2ac49b53c1835556fc8a, type: 3}
       propertyPath: m_LocalPosition.x
